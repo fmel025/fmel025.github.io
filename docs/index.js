@@ -2,7 +2,6 @@ const itemsPerPage = 5;
 
 const URL_BASE = "https://fmel025.github.io/";
 
-
 fetch(`https://api.github.com/repos/fmel025/fmel025.github.io/contents/docs`)
     .then(response => response.json())
     .then(data => {
