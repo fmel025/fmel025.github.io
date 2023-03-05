@@ -87,6 +87,7 @@ const renderPagination = () => {
     }
 }
 
+
 const checkCurrentPage = () => {
     const currentPage = sessionStorage.getItem('currentPage');
     if (currentPage) {
