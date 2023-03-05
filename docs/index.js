@@ -56,7 +56,7 @@ const renderPagination = () => {
         const prevLink = document.createElement('a');
         prevLink.classList.add('page-link');
         prevLink.href = '#';
-        prevLink.textContent = 'Siguiente';
+        prevLink.textContent = 'Anterior';
         prevLink.addEventListener('click', () => {
             currentPage--;
             renderPage();
@@ -74,7 +74,7 @@ const renderPagination = () => {
         const nextLink = document.createElement('a');
         nextLink.classList.add('page-link');
         nextLink.href = '#';
-        nextLink.textContent = 'Anterior';
+        nextLink.textContent = 'Siguiente';
         nextLink.addEventListener('click', () => {
             currentPage++;
             renderPage();
