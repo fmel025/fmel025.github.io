@@ -87,7 +87,8 @@ const renderPagination = () => {
     }
 }
 
-
+// Function that chechks the current page you were at.
+// It is checked inside the sessjon storage
 const checkCurrentPage = () => {
     const currentPage = sessionStorage.getItem('currentPage');
     if (currentPage) {
@@ -96,10 +97,13 @@ const checkCurrentPage = () => {
     return 0;
 }
 
+// Just a function that sets the current page to load it at the beginning
 const setCurrentPage = () => {
     sessionStorage.setItem('currentPage', currentPage);
 }
 
+// The main function that loads the current page, the classes and
+// renders everything
 const main = async () => {
     await fetchPages();
     numPages = Math.ceil(pages.length / elementsPerPage);

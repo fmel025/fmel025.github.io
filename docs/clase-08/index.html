@@ -1,0 +1,96 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Funciones en JavaScript</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="clase-08"
+                  title="Funciones en JavaScript"
+                  environment="web"
+                  feedback-link="https://github.com/fmel025/fmel025.github.io/issues">
+    
+      <google-codelab-step label="Concepto de funciones" duration="10">
+        <p>Las funciones son un conjunto de instrucciones que se agrupan para realizar una tarea específica. Y se pueden reutilizar en cualquier  parte del código.</p>
+<p>Aparte de ejecutar codigo las funciones tambien pueden devolver un valor de retorno, por ejemplo una funcion de suma puede devolver el resultado de la suma de ambos numeros.</p>
+<p>Segun la <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions" target="_blank">MDN</a> la definicion de una funcion es lo siguiente:</p>
+<p>Una función en JavaScript es similar a un procedimiento — un conjunto de instrucciones que realiza una tarea o calcula un valor, pero para que un procedimiento califique como función, debe tomar alguna entrada y devolver una salida donde hay alguna relación obvia entre la entrada y la salida.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Definir funciones" duration="10">
+        <p>En JavaScript tenemos dos tipos de maneras de declarar funciones: Declaración de función y expresión de función.</p>
+<h2 is-upgraded>Funciones definidas</h2>
+<p>Una definicion de funcion (tambien llamada como expresion de funcion o declaracion de funcion) consta de la palabra reservada <strong><code>function</code></strong> seguida de:</p>
+<ul>
+<li>El nombre de la funcion.</li>
+<li>Una lista de parametros a usar dentro de la funcion dentro de los parentesis y separados por comas.</li>
+<li>El codigo que ejecutara la funcion dentro de las llaves <code>{}</code>.</li>
+</ul>
+<p><strong>Nota importante:</strong> Los parámetros son variables que se declaran en la función y que se pueden utilizar dentro de la función.</p>
+<p>Una función puede tener cero o más parámetros.</p>
+<h3 is-upgraded>Sintaxis de una funcion definida</h3>
+<pre><code language="language-javascript" class="language-javascript">    function nombreFuncion(param1, param2) {
+         // Código a ejecutar
+    }
+</code></pre>
+<p>Con la palabra reservada function se declara una función, seguido del nombre de la función y los parámetros que recibe la función. (los parametros son opcionales usarlos)</p>
+<p>Los parámetros son variables que se declaran en la función y que se pueden utilizar dentro de la función.</p>
+<h3 is-upgraded>Ejemplo de una funcion</h3>
+<p>Ejercicio: Escribir una funcion que devuelva la suma de dos numeros y lo retorne.</p>
+<pre><code language="language-javascript" class="language-javascript">    function suma(a, b) {
+    let sumatoria = a + b
+    return sumatoria
+}
+</code></pre>
+<p>La funcion anterior recibe dos parametros siendo a y b los numeros a sumar, y como resultado nos devuelve la suma de ambos numeros.</p>
+<h2 is-upgraded>Invocar una funcion</h2>
+<p>El solo hecho de definir una funcion no hace que esta se ejecute, para hacer eso simplemente se escribe el nombre de la funcion y se le pasan los valores que necesite en sus parametros. A esto se le conoce como <strong>llamar una funcion</strong> o <strong>invocar una funcion</strong>.</p>
+<h3 is-upgraded>Ejemplo de la invocacion de una funcion</h3>
+<p>En este ejemplo tomamos el valor de la suma de dos numeros dentro de una variable e imprimimos su valor mediante la consola.</p>
+<pre><code language="language-javascript" class="language-javascript">    let sumatoria = suma(10,7)
+    console.log(&#34;Respuesta de la suma:&#34;, sumatoria);
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Concatenacion de strings" duration="5">
+        <p>En javascript podemos unir cadenas de texto  utilizando el simbolo &#34;+&#34;, y al hacer esto devuelve una nueva cadena de texto con la union de ambas.</p>
+<p>A continuacion se mostrara un ejemplo de concatenaion.</p>
+<pre><code language="language-javascript" class="language-javascript">    let saludo = &#34;Hola &#34;
+    saludo = saludo + &#34;mundo&#34;
+    console.log(saludo);
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

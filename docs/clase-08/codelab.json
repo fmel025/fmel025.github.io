@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-03-13T07:41:09-06:00",
+  "id": "clase-08",
+  "duration": 25,
+  "title": "Funciones en JavaScript",
+  "summary": "Funciones",
+  "source": "markdown/Clase08.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "introduccionajavascript"
+  ],
+  "tags": [
+    "course",
+    "guide",
+    "web"
+  ],
+  "feedback": "https://github.com/fmel025/fmel025.github.io/issues",
+  "url": "clase-08"
+}

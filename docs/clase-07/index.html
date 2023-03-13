@@ -1,0 +1,162 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Sentencias de condicion con Switch - Case</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="clase-07"
+                  title="Sentencias de condicion con Switch - Case"
+                  environment="web"
+                  feedback-link="https://github.com/fmel025/fmel025.github.io/issues">
+    
+      <google-codelab-step label="Concepto" duration="10">
+        <p>La palabra reservada <strong>switch</strong> evalua una expresion,la cual es comparada con varios casos o valores que puede tomar la variable o expresion a evaluar.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Diferencia entre un switch y un if" duration="10">
+        <p>La diferencia entre un if y un switch es que esta nos permite evaluar varios casos a la vez, en cambio con if, solamente podemos evaluar una expresion.</p>
+<p>En resumen evalua varios casos a los que la variable puede ser igual.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sintaxis del switch-case" duration="10">
+        <p>La sintaxis para utilizar la sentencia switch-case es la siguiente:</p>
+<pre><code language="language-javascript" class="language-javascript">switch (variable){
+        case valor_1:
+            // codigo si la variable es igual al valor 1
+            break;
+        
+        case valor_2:
+            // codigo si la variable es igual al valor 2
+            break;
+        
+        default:
+            // codigo si la variable no es igual a ningun valor o caso
+            break;
+    }
+</code></pre>
+<p>La sentencia <strong>switch</strong> tiene muchos casos los cuales se llaman <strong>case</strong>, donde evaluamos si la variable es igual a ese caso.</p>
+<p><strong>Variable</strong> es el valor el cual necesitamos evaluar si es igual a uno de los <strong>casos</strong> que contiene el switch-case.</p>
+<h2 is-upgraded>Palabras reservadas</h2>
+<p>El switch-case posee varias palabras reservadas la cual tiene cada una, su respectiva funcion dentro de esta sentencia, entre ellas tenemos las siguientes:</p>
+<ul>
+<li><strong>case (valor):</strong> Evalua que el valor de ese case sea igual al de la variable si se cumple se ejecuta el codigo a continuacion del case.</li>
+<li><strong>break:</strong> Detiene que el switch siga evaluando mas casos al haber ejecutado el codigo de un caso.</li>
+<li><strong>default:</strong> Todo el codigo que va en default se ejecuta si y solo si no se cumple ninguno de los casos.</li>
+</ul>
+<h3 is-upgraded>PD:</h3>
+<p>El switch-case puede tener la cantidad de casos que necesites.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Ejemplo 1" duration="0">
+        <p>Duration 00:05:00</p>
+<p><strong>Ejercicio</strong>: <em>Cree un algoritmo que al ingresar el dia de la semana devuelva un numero del 1 al 7 (dependiendo el dia)</em>.</p>
+<pre><code language="language-javascript" class="language-javascript">switch(dia){
+    case &#39;lunes&#39;:
+        console.log(1);
+        break;
+    
+    case&#39;martes&#39;:
+        console.log(2);
+        break;
+
+    case &#39;miercoles&#39;:
+        console.log(3);
+        break;
+
+    case &#39;jueves&#39;:
+        console.log(4);
+        break;
+
+    case &#39;viernes&#39;:
+        console.log(5);
+        break;
+    
+    case &#39;sabado&#39;:
+        console.log(6);
+        break;
+    
+    case &#39;domingo&#39;:
+        console.log(7);
+        break;
+    
+    default:
+        console.log(&#39;El valor ingresado no es un dia&#39;);
+        break;
+}
+</code></pre>
+<p>El codigo anterior resuelve el ejercicio que se ha propuesto, como se puede notar la variable <strong><em>dia</em></strong> contiene uno de los dias de la semana, si el dia es correcto se imprimira el numero correspondiente al dia, sino se mostrara que el datos que posee la variable no es un dia de la semana.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Ejemplo 2" duration="0">
+        <p>Duration 00:05:00</p>
+<p><strong>Ejercicio: </strong><em>Crear un algoritmo que convierta un numero a numeros romanos (solo del 1 al 5)</em></p>
+<pre><code language="language-javascript" class="language-javascript">// Obteniendo el numero desde consola
+let numero = parseInt(process.argv[2]);
+
+switch (numero) {
+    case 1:
+        console.log(&#34;I&#34;);
+        break;
+
+    case 2:
+        console.log(&#34;II&#34;);
+        break;
+
+    case 3:
+        console.log(&#34;III&#34;);
+        break;
+
+    case 4:
+        console.log(&#34;IV&#34;);
+        break;
+
+    case 5:
+        console.log(&#34;V&#34;);
+        break;
+
+    default:
+        console.log(&#34;El numero ingresado no esta entre el 1 y 5&#34;);
+        break;
+}
+</code></pre>
+<p>Como podemos ver si el numero ingresado esta ente el 1 y 5 imprimira su mismo valor pero en romano, de lo contrario se dira que el numero ingresado no esta entre estos valores.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
