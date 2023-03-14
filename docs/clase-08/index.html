@@ -80,6 +80,93 @@
     saludo = saludo + &#34;mundo&#34;
     console.log(saludo);
 </code></pre>
+<p>Veamos un segundo ejemplo de concatenacion: Primero declaramos una variable llamada nombre y otra llamada saludo para hacer que nuestra consola imprima un saludo.</p>
+<pre><code language="language-javascript" class="language-javascript">    let name = &#34;Fernando&#34;
+    let greeting = &#34;Hola soy &#34;
+    console.log(greeting + name);
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Constantes" duration="5">
+        <p>Las constantes vienen ser lo mismo que una variable pero a diferencia de las variables, una vez la inicializamos o le damos un valor, este valor ya no puede cambiar nunca mas en la ejecucion del programa.</p>
+<p>Para declarar una variable usamos &#34;let&#34;, pero para la declaracion de una constante  utilizamos la palabra reservada <code>const</code>.</p>
+<p>Utilizaremos constantes en variables que no cambiaran en el resto de la ejecucion de la aplicacion.</p>
+<h2 is-upgraded>Ejemplos</h2>
+<pre><code language="language-javascript" class="language-javascript">    const PORT = 8000
+    const PASSWORD = &#34;QWERTY&#34;
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Funciones anonimas y arrow functions" duration="10">
+        <p>Las arrow functions o funciones flecha son funciones que no se les declara  un nombre y muchas veces se utiliza como argumento en una funcion o en funciones de expresion.</p>
+<p>Las arrow functions se usan en funciones de expresion y tambien como <strong>callbacks</strong>.</p>
+<p>Un pequeño spoiler, los callbacks son funciones las cuales se usan como argumentos o parametros para otras funciones, funciones flecha y asi, es decir son funciones que se reciben como argumento dentro de otras para ejecutarlas en una cierta parte del codigo.</p>
+<h2 is-upgraded>Sintaxis de una arrow function</h2>
+<p>Sintaxis en javascript:</p>
+<pre><code language="language-javascript" class="language-javascript">    (parametros) =&gt; {
+      // codigo a ejecutar
+    }
+</code></pre>
+<p>El ejemplo anterior es para una arrow function que puede contener varias lineas de codigo y tambien podemos tener arrow functions mas sencillas de una sola linea, que solo ejecuten una sentencia y el resultado de ello se retorne sin tener que usar un return.</p>
+<pre><code language="language-javascript" class="language-javascript">    (parametros) =&gt; // codigo o expresion a retornar
+</code></pre>
+<p>En el codigo anterior lo que esta despues de la flecha es el valor que la funcion retornara, pero si lo que se esta haciendo no retorna ningun valor, solamente lo ejecutara.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Funciones de expresion con arrow functions" duration="10">
+        <p>Al igual como siempre en las funciones de expresion, podemos crearlas utilizando funciones flecha, pero conteniendolas dentro de variables y constantes.</p>
+<p>A continuacion mostramos la sintaxis de las funciones de expresion con arrow functions.</p>
+<pre><code language="language-javascript" class="language-javascript">     const nombreFuncion = (parametros) =&gt; {
+        /// codigo a ejecutar    
+     }
+</code></pre>
+<p>O tambien podemos usar arrow functions de una sola linea como la sintaxis de a continuacion.</p>
+<pre><code language="language-javascript" class="language-javascript">    const nombreFuncion = (parametros) =&gt; instruccion_de_una_linea
+</code></pre>
+<h2 is-upgraded>Ejemplos:</h2>
+<h3 is-upgraded>Ejemplo 1</h3>
+<ul>
+<li>Cree una funcion con una arrow function que devuelva la multiplicacion de dos numeros.</li>
+</ul>
+<pre><code language="language-javascript" class="language-javascript">    // Recibimos dos numeros a y b como parametros.
+    const multiplicar = (a,b) =&gt; a * b;
+
+    // Invocando la funcion
+    const multiplicacion = multiplicar(2,3)
+    console.log(&#34;El resultado de la multiplicacion es:&#34;, multiplicacion);
+</code></pre>
+<h3 is-upgraded>Ejemplo 2</h3>
+<ul>
+<li>Cree una funcion que reciba como parametro un valor de edad y determine segun la edad ingresada la persona es mayor de edad o no.</li>
+</ul>
+<pre><code language="language-javascript" class="language-javascript">    const verificarEdad = (edad) =&gt; {
+        if(edad &gt;= 18){
+            console.log(&#34;Eres mayor de edad&#34;);
+        } else {
+            console.log(&#34;Aun eres menor de edad&#34;);
+        }
+    }
+
+    // Invocando la funcion y viendo que sucede
+    verificarEdad(23) // Imprime eres mayor de edad
+    verificarEdad(17) // Eres menor de edad
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tarea" duration="30">
+        <ol type="1">
+<li>Crear un arrow function de una linea, sin parametros que imprima lo que ustedes deseen.</li>
+<li>Crear una funcion que reciba como parametro dos numeros y retorne el mayor de los dos numeros</li>
+<li>Crear una arrow function, la cual reciba un parametro llamado precio, donde si la compra es mayor a los $20,  aplicarle un 15% de descuento y imprimir el nuevo precio.</li>
+</ol>
 
 
       </google-codelab-step>

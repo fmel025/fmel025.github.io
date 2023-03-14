@@ -85,3 +85,111 @@ A continuacion se mostrara un ejemplo de concatenaion.
     saludo = saludo + "mundo"
     console.log(saludo);
 ```
+Veamos un segundo ejemplo de concatenacion:
+Primero declaramos una variable llamada nombre y otra llamada saludo para hacer que nuestra consola imprima un saludo.
+
+```javascript
+    let name = "Fernando"
+    let greeting = "Hola soy "
+    console.log(greeting + name);
+```
+
+## Constantes
+Duration: 00:05:00
+
+Las constantes vienen ser lo mismo que una variable pero a diferencia de las variables, una vez la inicializamos o le damos un valor, este valor ya no puede cambiar nunca mas en la ejecucion del programa.
+
+Para declarar una variable usamos "let", pero para la declaracion de una constante  utilizamos la palabra reservada ```const```.
+
+Utilizaremos constantes en variables que no cambiaran en el resto de la ejecucion de la aplicacion.
+
+### Ejemplos
+
+```javascript
+    const PORT = 8000
+    const PASSWORD = "QWERTY"
+```
+## Funciones anonimas y arrow functions
+Duration: 00:10:00
+
+Las arrow functions o funciones flecha son funciones que no se les declara  un nombre y muchas veces se utiliza como argumento en una funcion o en funciones de expresion.
+
+Las arrow functions se usan en funciones de expresion y tambien como **callbacks**.
+
+Un pequeño spoiler, los callbacks son funciones las cuales se usan como argumentos o parametros para otras funciones, funciones flecha y asi, es decir son funciones que se reciben como argumento dentro de otras para ejecutarlas en una cierta parte del codigo.
+
+### Sintaxis de una arrow function
+
+Sintaxis en javascript:
+
+```javascript
+    (parametros) => {
+      // codigo a ejecutar
+    }
+```
+
+El ejemplo anterior es para una arrow function que puede contener varias lineas de codigo y tambien podemos tener arrow functions mas sencillas de una sola linea, que solo ejecuten una sentencia y el resultado de ello se retorne sin tener que usar un return.
+
+```javascript
+    (parametros) => // codigo o expresion a retornar
+```
+En el codigo anterior lo que esta despues de la flecha es el valor que la funcion retornara, pero si lo que se esta haciendo no retorna ningun valor, solamente lo ejecutara.
+
+## Funciones de expresion con arrow functions
+Duration: 00:10:00
+
+Al igual como siempre en las funciones de expresion, podemos crearlas utilizando funciones flecha, pero conteniendolas dentro de variables y constantes.
+
+A continuacion mostramos la sintaxis de las funciones de expresion con arrow functions.
+
+```javascript
+     const nombreFuncion = (parametros) => {
+        /// codigo a ejecutar    
+     }
+```
+
+O tambien podemos usar arrow functions de una sola linea como la sintaxis de a continuacion.
+
+```javascript
+    const nombreFuncion = (parametros) => instruccion_de_una_linea
+```
+
+### Ejemplos:
+
+#### Ejemplo 1
+
+- Cree una funcion con una arrow function que devuelva la multiplicacion de dos numeros.
+
+```javascript
+    // Recibimos dos numeros a y b como parametros.
+    const multiplicar = (a,b) => a * b;
+
+    // Invocando la funcion
+    const multiplicacion = multiplicar(2,3)
+    console.log("El resultado de la multiplicacion es:", multiplicacion);
+```
+
+#### Ejemplo 2
+
+- Cree una funcion que reciba como parametro un valor de edad y determine segun la edad ingresada la persona es mayor de edad o no.
+
+```javascript
+    const verificarEdad = (edad) => {
+        if(edad >= 18){
+            console.log("Eres mayor de edad");
+        } else {
+            console.log("Aun eres menor de edad");
+        }
+    }
+
+    // Invocando la funcion y viendo que sucede
+    verificarEdad(23) // Imprime eres mayor de edad
+    verificarEdad(17) // Eres menor de edad
+```
+
+## Tarea
+Duration: 00:30:00
+
+1. Crear un arrow function de una linea, sin parametros que imprima lo que ustedes deseen.
+2. Crear una funcion que reciba como parametro dos numeros y retorne el mayor de los dos numeros
+3. Crear una arrow function, la cual reciba un parametro llamado precio, donde si la compra es mayor a los $20,  aplicarle un 15% de descuento y imprimir el nuevo precio.
